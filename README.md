@@ -1,4 +1,8 @@
-## Welcome to GitHub Pages
+## 欢迎来到Yaxin的个人主页
+
+🤝这里的github主页，将会存储Yaxin做过的项目介绍。
+
+### Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/YaxinCui/YaxinCui/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
