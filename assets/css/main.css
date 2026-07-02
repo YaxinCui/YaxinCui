@@ -193,6 +193,47 @@ li {
   visibility: hidden;
 }
 
+.photo-hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 460px;
+  margin-bottom: 1.75rem;
+  padding: 1.5rem;
+  color: #ffffff;
+  background-image:
+    linear-gradient(180deg, rgba(5, 8, 14, 0.18), rgba(5, 8, 14, 0.34) 42%, rgba(5, 8, 14, 0.76)),
+    url("../images/hero-background.jpg");
+  background-position: center 58%;
+  background-size: cover;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+
+.photo-hero__content {
+  max-width: 680px;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+.photo-hero__eyebrow {
+  margin-bottom: 0.25rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-content .photo-hero h2 {
+  margin: 0 0 0.75rem;
+  padding: 0;
+  color: #ffffff;
+  font-size: 2.15rem;
+}
+
+.photo-hero p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
 .paper-box {
   display: flex;
   flex-wrap: wrap;
@@ -361,5 +402,15 @@ li {
 
   #main {
     padding-top: 1.4rem;
+  }
+
+  .photo-hero {
+    min-height: 560px;
+    padding: 1rem;
+    background-position: center 62%;
+  }
+
+  .page-content .photo-hero h2 {
+    font-size: 1.85rem;
   }
 }
