@@ -1,0 +1,10 @@
+title: "Yaxin Cui"
+description: "Academic homepage for research, publications, and projects."
+url: "https://yaxincui.github.io"
+baseurl: "/YaxinCui"
+repository: "YaxinCui/YaxinCui"
+author:
+  name: "Yaxin Cui"
+  location: "China"
+  github: "YaxinCui"
+plugins: []

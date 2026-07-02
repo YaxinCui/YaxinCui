@@ -2,193 +2,151 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Yaxin Cui | 个人主页</title>
-  <meta name="description" content="研究方向：大模型评测与对齐、跨语言情感分析、知识图谱、群体智能与优化等。论文与成果展示。" />
-  <style>
-    :root{
-      --bg:#0b1020; --card:rgba(255,255,255,0.06); --text:rgba(255,255,255,0.92);
-      --muted:rgba(255,255,255,0.70); --line:rgba(255,255,255,0.12);
-      --accent:#7c5cff; --accent2:#00d2ff; --shadow:0 18px 60px rgba(0,0,0,0.45);
-      --radius:18px; --max:980px;
-    }
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg:#f7f8fb; --card:rgba(20,24,40,0.04); --text:rgba(16,18,27,0.92);
-        --muted:rgba(16,18,27,0.68); --line:rgba(16,18,27,0.10); --shadow:0 18px 60px rgba(16,18,27,0.10);
-      }
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", Arial, "Noto Sans CJK SC", sans-serif;
-      color:var(--text);
-      background: radial-gradient(1200px 600px at 15% 10%, rgba(124,92,255,0.35), transparent 55%),
-                  radial-gradient(900px 500px at 80% 20%, rgba(0,210,255,0.22), transparent 55%),
-                  radial-gradient(1200px 700px at 40% 90%, rgba(124,92,255,0.18), transparent 60%),
-                  var(--bg);
-      min-height:100vh;
-    }
-    a{color:inherit; text-decoration:none}
-    a:hover{ text-decoration: underline; text-underline-offset: 3px; }
-    .wrap{max-width:var(--max); margin:0 auto; padding:42px 18px 64px;}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:12px 14px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,0.03);
-      border-radius:999px;
-      backdrop-filter: blur(10px);
-    }
-    .brand{display:flex; align-items:center; gap:10px; font-weight:650; letter-spacing:0.2px;}
-    .dot{
-      width:10px; height:10px; border-radius:99px;
-      background: linear-gradient(135deg,var(--accent),var(--accent2));
-      box-shadow: 0 0 0 6px rgba(124,92,255,0.12);
-    }
-    .nav{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end;}
-    .nav a{color:var(--muted); font-size:14px;}
-    .hero{margin-top:26px; padding:28px; border-radius:var(--radius); border:1px solid var(--line); background:var(--card); box-shadow: var(--shadow);}
-    .hero h1{margin:0; font-size:34px; letter-spacing:0.2px;}
-    .subtitle{margin-top:10px; color:var(--muted); line-height:1.7;}
-    .chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px;}
-    .chip{
-      padding:8px 12px; border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,0.03);
-      font-size:13px; color:var(--muted);
-    }
-    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;}
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 14px; border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,0.03);
-      color:var(--text);
-      font-size:14px;
-    }
-    .btn.primary{
-      border-color: transparent;
-      background: linear-gradient(135deg, rgba(124,92,255,0.95), rgba(0,210,255,0.65));
-      box-shadow: 0 12px 36px rgba(124,92,255,0.18);
-    }
-    .grid{display:grid; grid-template-columns: 1fr; gap:16px; margin-top:18px;}
-    @media (min-width: 860px){
-      .grid{grid-template-columns: 1fr 1fr;}
-    }
-    .card{
-      padding:22px; border-radius:var(--radius);
-      border:1px solid var(--line);
-      background:var(--card);
-      box-shadow: var(--shadow);
-    }
-    .card h2{margin:0 0 10px; font-size:18px; letter-spacing:0.2px;}
-    .muted{color:var(--muted);}
-    ul{margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.75;}
-    li{margin:6px 0;}
-    .section{margin-top:16px;}
-    .items{display:flex; flex-direction:column; gap:12px; margin-top:12px;}
-    .item{
-      padding:14px 14px;
-      border:1px solid var(--line);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.03);
-    }
-    .item .title{font-weight:650; margin:0 0 6px;}
-    .item .meta{margin:0; font-size:13px; color:var(--muted); line-height:1.6;}
-    footer{margin-top:22px; color:var(--muted); font-size:13px; text-align:center;}
-    .small{font-size:13px;}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yaxin Cui - Homepage</title>
+  <meta name="description" content="Yaxin Cui 的学术个人主页，展示研究方向、论文成果、技能与项目经历。" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="brand"><span class="dot"></span><span>Yaxin Cui</span></div>
-      <div class="nav">
-        <a href="#research">研究方向</a>
-        <a href="#skills">技能</a>
-        <a href="#papers">论文</a>
-      </div>
-    </div>
-
-    <div class="hero">
-      <h1>Yaxin Cui</h1>
-      <p class="subtitle">
-        关注大模型在垂直行业中的<strong>评测、对齐与推理</strong>，以及跨语言 NLP、知识图谱与智能优化算法的研究与工程落地。
-      </p>
-
-      <div class="chips">
-        <span class="chip">LLM 评测基准 / 诊断评测</span>
-        <span class="chip">CPT / SFT / RL / CoT</span>
-        <span class="chip">跨语言情感分析 / 低资源学习</span>
-        <span class="chip">知识图谱 / 事件挖掘</span>
-        <span class="chip">群体智能 / 高维优化</span>
-      </div>
-
-    </div>
-
-    <div class="grid section">
-      <div id="research" class="card">
-        <h2>研究方向</h2>
-        <ul>
-          <li>大模型评测：面向行业复杂链路任务的基准构建、能力诊断与评测体系设计（供应链场景）。</li>
-          <li>领域大模型训练与对齐：CPT / SFT / RL 与链式思维（CoT）在垂直语料与专家知识注入中的工程化落地。</li>
-          <li>自然语言处理：跨语言情感分析、方面术语抽取、低资源学习与多粒度语境对齐。</li>
-          <li>知识图谱与事件语义表示：事件挖掘、关系推理与可解释性增强。</li>
-          <li>群体智能与优化：蛇优化器/灰狼优化算法等的改进与在高维工程问题中的应用。</li>
+  <header class="masthead">
+    <div class="masthead__inner-wrap">
+      <nav class="greedy-nav" aria-label="Main navigation">
+        <a class="site-title" href="#about-me">Homepage</a>
+        <ul class="visible-links">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#research-interests">Research Interests</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </nav>
+    </div>
+  </header>
 
-      <div id="skills" class="card">
-        <h2>技能</h2>
-        <p class="muted small">（按你的公开偏好可继续精简/强化关键词）</p>
-        <ul>
-          <li>编程/工程：Python、Java、SQL、Android、Matlab</li>
-          <li>深度学习：PyTorch</li>
-          <li>大模型实践：语料构建、CPT/SFT/RL 训练流程、评测集构造与评测框架设计</li>
+  <main id="main" role="main">
+    <aside class="sidebar sticky">
+      <section class="profile-box" itemscope itemtype="https://schema.org/Person">
+        <img class="author-avatar" src="https://github.com/YaxinCui.png" alt="Yaxin Cui" />
+        <h1 class="author-name" itemprop="name">Yaxin Cui</h1>
+        <p class="author-bio" itemprop="description">Large Language Model Evaluation and Alignment</p>
+
+        <ul class="author-urls" id="contact">
+          <li>Researcher / Engineer</li>
+          <li>China</li>
+          <li><a href="https://github.com/YaxinCui">GitHub</a></li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </aside>
 
-    <div id="papers" class="card section">
-      <h2>论文</h2>
+    <article class="page">
+      <section class="page-content">
+        <span class="anchor" id="about-me"></span>
+        <p>
+          I am interested in evaluation, alignment, reasoning and engineering practice of large language models in vertical domains,
+          with additional work on cross-lingual NLP, knowledge graphs, event mining and intelligent optimization algorithms.
+        </p>
+        <p>
+          当前关注大模型在垂直行业中的评测、对齐与推理，以及跨语言自然语言处理、知识图谱和智能优化算法的研究与工程落地。
+        </p>
 
-      <div class="items">
-        <div class="item">
-          <p class="title">CSCBench: A PVC Diagnostic Benchmark for Commodity Supply Chain Reasoning</p>
-          <p class="meta">面向大宗商品供应链推理的诊断型评测基准。</p>
-        </div>
+        <h2 id="news">News</h2>
+        <ul>
+          <li><em>2026.07</em>: Homepage updated to an Academic Pages style for GitHub Pages.</li>
+        </ul>
 
-        <div class="item">
-          <p class="title">A Language-Agnostic Framework With Bidirectional Syntactic Graph Convolutional Networks for Cross-Lingual Aspect Term Extraction</p>
-          <p class="meta">提出 LA-BSGCN，缓解多语言句法对齐与 Encoder 句法信息缺失问题。</p>
-        </div>
+        <h2 id="research-interests">Research Interests</h2>
+        <ul>
+          <li>Large language model evaluation, diagnostic benchmarks and domain-specific reasoning.</li>
+          <li>Domain model training and alignment, including CPT, SFT, RL and chain-of-thought workflows.</li>
+          <li>Cross-lingual sentiment analysis, aspect term extraction, low-resource learning and contextual alignment.</li>
+          <li>Knowledge graphs, event semantic representation, event mining and relation reasoning.</li>
+          <li>Swarm intelligence and high-dimensional optimization algorithms for engineering problems.</li>
+        </ul>
 
-        <div class="item">
-          <p class="title">Multi-Granularity Context Alignment for Cross-Lingual Aspect-Based Sentiment Analysis</p>
-          <p class="meta">提出多粒度语境对齐与并行 MLM/对比学习对齐机制。</p>
-        </div>
+        <h2 id="publications">Selected Publications</h2>
 
-        <div class="item">
-          <p class="title">A multi-strategy improved snake optimizer for three-dimensional UAV path planning and engineering problems</p>
-          <p class="meta">提出 MISO 以增强全局寻优与收敛表现，并用于三维路径规划等工程问题。</p>
-        </div>
+        <section class="paper-box">
+          <div class="paper-box-image">
+            <div class="paper-figure paper-figure--blue">
+              <span class="badge">Benchmark</span>
+              <span>CSC<br />Bench</span>
+            </div>
+          </div>
+          <div class="paper-box-text">
+            <h3>CSCBench: A PVC Diagnostic Benchmark for Commodity Supply Chain Reasoning</h3>
+            <p>面向大宗商品供应链推理的诊断型评测基准。</p>
+            <p><strong>Keywords:</strong> LLM evaluation, supply chain reasoning, diagnostic benchmark.</p>
+          </div>
+        </section>
 
-        <div class="item">
-          <p class="title">Adaptive mechanism-based grey wolf optimizer for feature selection in high-dimensional classification</p>
-          <p class="meta">用于高维特征选择的 AMGWO。</p>
-        </div>
-      </div>
-    </div>
+        <section class="paper-box">
+          <div class="paper-box-image">
+            <div class="paper-figure paper-figure--green">
+              <span class="badge">NLP</span>
+              <span>LA<br />BSGCN</span>
+            </div>
+          </div>
+          <div class="paper-box-text">
+            <h3>A Language-Agnostic Framework With Bidirectional Syntactic Graph Convolutional Networks for Cross-Lingual Aspect Term Extraction</h3>
+            <p>提出 LA-BSGCN，缓解多语言句法对齐与 encoder 句法信息缺失问题。</p>
+            <p><strong>Keywords:</strong> cross-lingual learning, aspect term extraction, syntactic graph convolution.</p>
+          </div>
+        </section>
 
-    <footer>
-      <div>© <span id="year"></span> Yaxin Cui</div>
-    </footer>
-  </div>
+        <section class="paper-box">
+          <div class="paper-box-image">
+            <div class="paper-figure paper-figure--purple">
+              <span class="badge">Sentiment</span>
+              <span>MGCA</span>
+            </div>
+          </div>
+          <div class="paper-box-text">
+            <h3>Multi-Granularity Context Alignment for Cross-Lingual Aspect-Based Sentiment Analysis</h3>
+            <p>提出多粒度语境对齐与并行 MLM / 对比学习机制，用于跨语言方面级情感分析。</p>
+            <p><strong>Keywords:</strong> ABSA, contextual alignment, contrastive learning.</p>
+          </div>
+        </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+        <section class="paper-box">
+          <div class="paper-box-image">
+            <div class="paper-figure paper-figure--orange">
+              <span class="badge">Optimization</span>
+              <span>MISO</span>
+            </div>
+          </div>
+          <div class="paper-box-text">
+            <h3>A Multi-Strategy Improved Snake Optimizer for Three-Dimensional UAV Path Planning and Engineering Problems</h3>
+            <p>提出 MISO 以增强全局寻优与收敛表现，并用于三维路径规划等工程问题。</p>
+            <p><strong>Keywords:</strong> optimization, UAV path planning, engineering applications.</p>
+          </div>
+        </section>
+
+        <section class="paper-box">
+          <div class="paper-box-image">
+            <div class="paper-figure paper-figure--gray">
+              <span class="badge">Feature Selection</span>
+              <span>AMGWO</span>
+            </div>
+          </div>
+          <div class="paper-box-text">
+            <h3>Adaptive Mechanism-Based Grey Wolf Optimizer for Feature Selection in High-Dimensional Classification</h3>
+            <p>用于高维分类任务特征选择的自适应机制灰狼优化算法。</p>
+            <p><strong>Keywords:</strong> feature selection, high-dimensional classification, metaheuristic optimization.</p>
+          </div>
+        </section>
+
+        <h2 id="skills">Skills</h2>
+        <ul>
+          <li><strong>Programming:</strong> Python, Java, SQL, Android, Matlab.</li>
+          <li><strong>Deep Learning:</strong> PyTorch and model evaluation workflows.</li>
+          <li><strong>LLM Practice:</strong> corpus construction, CPT / SFT / RL pipelines, benchmark design and evaluation frameworks.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <p>Copyright © 2026 Yaxin Cui. Powered by GitHub Pages.</p>
+  </footer>
 </body>
 </html>
-
