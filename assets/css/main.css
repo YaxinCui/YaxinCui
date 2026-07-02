@@ -218,6 +218,16 @@ li {
   color: var(--text);
 }
 
+.paper-links {
+  margin: 0.35rem 0 0.55rem;
+  color: var(--muted);
+}
+
+.paper-links a + a::before {
+  color: var(--muted);
+  content: " | ";
+}
+
 .paper-figure {
   position: relative;
   display: grid;
